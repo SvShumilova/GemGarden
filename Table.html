@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gem Garden</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('imgs/wallpaper.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        header, nav, footer {
+            text-align: center;
+                padding: 10px;
+                background-color: rgba(108, 141, 163, 0.192);
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #00d6d6;
+        }
+        nav a.active {
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-image: url('imgs/Wallpaper.Table.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        th, td {
+            border: 1px solid white;
+            padding: 10px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0);
+            font-size: 1.2em;
+        }
+        table img {
+            width: 200px;
+            height: auto;
+        }
+
+        .album-title {
+            font-size: 1.5em;
+            width: 25%;
+        }
+        .author, .date, .duration, .genre, .secondary-genre, .link {
+            width: 15%;
+        }
+        .back-to-top {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #00d6d6;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gem Garden</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="Table.html" class="active">Товар и цены</a>
+            <a href="Text.html">Описание товаров</a>
+            <a href="Task1017.html">Задача</a>
+            <a href="Passport.html">Паспорт</a>
+            <a href="Form.html">Украшения на заказ</a>
+            <a href="Form2.html">Связаться с нами</a>
+            <a href="https://t.me/SV_Lasagna" target="_blank">Связаться с автором</a>
+        </nav>
+    </header>
+    
+    <section id="table-section">
+        <h2>Таблица с товарами и ценами</h2>
+        <table>
+            <tbody><tr>
+                <th>Категория товара</th>
+                <th>Категория материалов</th>
+                <th>Цена</th>
+                <th>Скидка</th>
+                <th>Ссылка</th>
+                <th>Изображение</th>
+            </tr>
+            <tr>
+                <td class="jewel-title">Серьги</td>
+                <td class="author">Золото, Серебро, Белое Золото, Красное Золото</td>
+                <td>10 рублей</td>
+                <td>20%</td>
+                <td><a href="https://sokolov.ru/jewelry-catalog/product/1021939/?utm_referrer=https%3A%2F%2Fsokolov.ru%2Fjewelry-catalog%2Fearrings%2F" target="_blank">Подробнее</a></td>
+                <td><a href="https://sokolov.ru/jewelry-catalog/product/1021939/?utm_referrer=https%3A%2F%2Fsokolov.ru%2Fjewelry-catalog%2Fearrings%2F" target="_blank">
+                    <img src="covers/earrings.jpg" alt="Обложка альбома Confession Of Lazarus" title="Сережки"></a></td>
+            </tr>
+            <tr>
+                <td class="jewel-title">Кольца</td>
+                <td class="author">Золото, Серебро, Белое Золото, Красное Золото</td>
+                <td>20 рублей</td>
+                <td>30%</td>
+                <td><a href="https://sokolov.ru/jewelry-catalog/product/94011490/" target="_blank">Подробнее</a></td>
+                <td><a href="https://sokolov.ru/jewelry-catalog/product/94011490/" target="_blank">
+                    <img src="covers/ring.jpg" alt="Обложка альбома Soundtrack for the Blind" title="Кольца"></a></td>
+            </tr>
+            <tr>
+                <td class="jewel-title">Браслеты</td>
+                <td class="author">Золото, Серебро, Красное Золото</td>
+                <td>100 рублей</td>
+                <td>15%</td>
+                <td><a href="https://sokolov.ru/jewelry-catalog/product/94051012/" target="_blank">Подробнее</a></td>
+                <td><a href="https://sokolov.ru/jewelry-catalog/product/94051012/" target="_blank">
+                    <img src="covers/braslet.jpg" alt="Обложка альбома Visions of Bodies Being Burned" title="Браслеты"></a></td>
+            </tr>
+            <tr>
+                <td class="jewel-title">Подвески</td>
+                <td class="author">Золото, Серебро, Белое Золото</td>
+                <td>50 копеек</td>
+                <td>30%</td>
+                <td><a href="https://sokolov.ru/jewelry-catalog/product/732173/" target="_blank">Подробнее</a></td>
+                <td><a href="https://sokolov.ru/jewelry-catalog/product/732173/" target="_blank">
+                    <img src="covers/podveska.jpg" alt="Обложка альбома Pizza and Codeine" title="Подвески"></a></td>
+            </tr>
+            <tr>
+                <td class="jewel-title">Цепи</td>
+                <td class="author">Золото, Серебро, Белое Золото, Красное Золото</td>
+                <td>5000 рублей</td>
+                <td>1%</td>
+                <td><a href="https://sokolov.ru/jewelry-catalog/product/581030258/" target="_blank">Подробнее</a></td>
+                <td><a href="https://sokolov.ru/jewelry-catalog/product/581030258/" target="_blank">
+                    <img src="covers/chains.jpg" alt="Обложка альбома Foxing" title="Цепи"></a></td>
+            </tr>
+        </tbody></table>
+    </section>
+    
+    <section id="jewel-of-the-day">
+        <h2>Скидка дня</h2>
+        <table>
+            <tbody><tr>
+                <th>Категория товара</th>
+                <th>Категория материалов</th>
+                <th>Цена</th>
+                <th>Скидка</th>
+                <th>Ссылка</th>
+                <th>Изображение</th>
+            </tr>
+            <tr>
+                <td class="jewel-title">Броши</td>
+                <td class="author">Золото, Серебро, Белое Золото, Красное Золото, Желтое золото</td>
+                <td>300 рублей</td>
+                <td>50%</td>
+                <td><a href="https://sokolov.ru/jewelry-catalog/product/94040339/" target="_blank">Подробнее</a></td>
+                <td>
+                    <a href="https://sokolov.ru/jewelry-catalog/product/94040339/" target="_blank">
+                        <img src="covers/brosh.jpg" alt="Обложка альбома I Want to Be There" title="Броши">
+                    </a>
+                </td>
+            </tr>
+        </tbody></table>
+    </section>
+    <a href="index.html" class="back-to-top">К началу</a>
+    
+    <footer>
+        <p>© 2024 Gem Garden</p>
+    </footer>
+    
+</body>
+</html>

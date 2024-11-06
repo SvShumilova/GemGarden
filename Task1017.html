@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вычисление x в зависимости от a</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('imgs/wallpaper.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        header, nav, footer {
+            text-align: center;
+                padding: 10px;
+                background-color: rgba(108, 141, 163, 0.192);
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #00d6d6;
+        }
+        nav a.active {
+            font-weight: bold;
+        }
+        .form-container {
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(108, 141, 163, 0.39);
+            border-radius: 10px;
+            width: 50%;
+        }
+        label, input, button {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #00d6d6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+        .result {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Вычисление x = a**4</h1>
+        <h1>Gem Garden</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="Table.html">Товар и цены</a>
+            <a href="Text.html">Описание товаров</a>
+            <a href="Task1017.html" class="active">Задача</a>
+            <a href="Passport.html">Паспорт</a>
+            <a href="Form.html">Украшения на заказ</a>
+            <a href="Form2.html">Связаться с нами</a>
+            <a href="https://t.me/SV_Lasagna" target="_blank">Связаться с автором</a>
+        </nav>
+    </header>
+    <main> 
+        <section class="form-container">    
+            <h2>Вычисление значения x в зависимости от a</h2>    
+                <label for="a">Введите значение A:</label>
+                <input type="number" id="a" step="0.01" required>
+                <button onclick="calculateX()">Вычислить</button>
+                <form action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+                    <input type="hidden" name="q" value="search">
+                <input type="submit" value="Отправить">
+            <p class="result" id="result">Результат: </p>
+        </section>  
+    </main>
+
+    <footer>
+        <p>© 2024 Gem Garden</p>
+    </footer>
+
+    <script>
+        function calculateX() {
+            const a = parseFloat(document.getElementById("a").value);
+            let x;
+
+            if (a < 10) {
+                x = Math.pow(a, 4);
+            } else if (a > 61) {
+                x = a;
+            } else {
+                x = a - Math.sin(Math.pow(a, 2));
+            }
+
+            document.getElementById("result").innerText = "Результат: x = " + x.toFixed(4);
+
+        }
+    </script>
+    
+</body>
+</html>
